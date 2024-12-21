@@ -8,7 +8,7 @@ vector<long long>solve(long long n,long long k){
     long long idx=0;
     vector<long long>ans;
     while(!people.empty()){
-        idx=(idx+k)%people.size();
+        idx=(idx+k+1)%people.size();
         ans.push_back(people[idx]);
         people.erase(people.begin()+idx);
     }
